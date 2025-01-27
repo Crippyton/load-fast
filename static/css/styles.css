@@ -1,0 +1,199 @@
+/* Estilo geral */
+body {
+    background-color: #0a0a0a;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(/static/assets/pexels-photo-4233216.jpeg);
+    background-size: cover; /* Faz a imagem ocupar toda a tela */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-position: center center; /* Centraliza a imagem */
+    background-attachment: fixed; /* Faz a imagem permanecer fixa no fundo ao rolar a página */
+}
+
+/* Container geral */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 10px;
+    }
+}
+
+/* Animação de fundo */
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0 0 10px rgba(0, 255, 255, 0.7), 0 0 50px rgba(0, 255, 255, 0.7);
+    }
+    50% {
+        box-shadow: 0 0 30px rgba(0, 255, 255, 0.8), 0 0 100px rgba(0, 255, 255, 0.8);
+    }
+}
+
+/* Estilo de títulos */
+h1, h2, h3 {
+    color: #00e6e6;
+    text-shadow: 0 0 10px #00e6e6, 0 0 20px #00e6e6;
+}
+
+p, .lead {
+    color: #fff;
+}
+
+/* Cartões */
+.card {
+    background-color: #1f1f1f;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.card-body {
+    padding: 2rem;
+    animation: glow 1.5s ease-in-out infinite;
+}
+
+/* Inputs */
+.input-dark {
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 10px;
+}
+
+/* Botões */
+.btn-dark {
+    background-color: #9932cc;
+    color: #000;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    transition: 0.3s;
+    padding: 10px;
+}
+
+.btn-dark:hover {
+    background-color:red;
+}
+
+/* Botões sociais */
+.btn-social-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+.btn-social-icon:hover {
+    background-color: #9932cc;
+    transform: scale(1.1);
+}
+
+btn-dark btn-lg{
+    background-color: #00e6e6;
+}
+
+btn-dark btn-lg :hover{
+    background-color: red;
+}
+
+/* Botão de doação */
+footer .btn-success {
+    padding: 12px 30px;
+    font-size: 1rem;
+    background-color: #28a745;
+    border: none;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+footer .btn-success:hover {
+    background-color: #218838;
+}
+
+/* Canvas */
+#pentagonCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+/* Histórico */
+#video-preview {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #000;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+#video-preview iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+
+.history {
+    margin-top: 30px;
+}
+
+.history ul {
+    list-style: none;
+    padding: 0;
+}
+
+.history li {
+    background-color: #333;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.history li:hover {
+    background-color: #444;
+}
+
+/* Responsividade extra */
+@media (max-width: 767px) {
+    .card-body {
+        padding: 1.5rem;
+    }
+
+    .btn-social-icon {
+        width: 35px;
+        height: 35px;
+    }
+
+    footer .btn-success {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+}
+
+
+  

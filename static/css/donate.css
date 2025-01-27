@@ -1,0 +1,161 @@
+/* General Reset */
+body, html {
+    background-color: #0a0a0a;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(/static/assets/pexels-photo-4233216.jpeg);
+    background-size: cover; /* Faz a imagem ocupar toda a tela */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-position: center center; /* Centraliza a imagem */
+    background-attachment: fixed; /* Faz a imagem permanecer fixa no fundo ao rolar a página */
+  }
+  
+  /* Main Container */
+  .donate-container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 20px;
+    background: black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .donate-container h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #00e6e6;
+  }
+  
+  .donate-container p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color:whitesmoke;
+  }
+  
+  /* Donation Options */
+  .donation-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .donate-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .donate-btn:hover {
+    background-color: darkorchid;
+    color: white;
+  }
+  
+  .custom-btn {
+    background-color: darkorchid;
+  }
+  
+  .custom-btn:hover {
+    background-color: red;
+  }
+  
+  /* Custom Donation */
+  .custom-donation {
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  .custom-donation label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .custom-donation input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  #custom-donate-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    color: black;
+    background-color: darkorchid;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #custom-donate-btn:hover {
+    background-color: red;
+    color: white;
+  }
+  
+  /* PIX Link Section */
+  #pix-link-section {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  #pix-key {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  #copy-pix-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: black;
+    background-color: darkorchid;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #copy-pix-btn:hover {
+    background-color:red;
+  }
+  
+  .thank-you-message {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #28a745;
+  }
+  
+  /* Hidden Elements */
+  .hidden {
+    display: none;
+  }
+
+  footer p{
+    text-align: center;
+  }
+  
+  .qr-code {
+    max-width: 400px; /* Ajusta o tamanho máximo */
+    max-height: 400px; /* Ajusta a altura máxima */
+    width: auto; /* Mantém a proporção */
+    height: auto; /* Mantém a proporção */
+    margin: 20px auto; /* Centraliza e adiciona espaçamento */
+    display: block;
+  }
